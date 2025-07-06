@@ -24,6 +24,13 @@
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
+
+    /*
+        My reflections:
+        I choose these items because they are the last 5 items I ordered from Amazon.com
+        I think this would work flawlessly with real world inventory systems.
+        PDO prevents SQL injection by using prepared statements which is using placeholders instead of real values. It separates the code and the data.
+    */
 ?>
   
 
